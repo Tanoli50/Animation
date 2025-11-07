@@ -10,21 +10,33 @@
             width: 300px;
             background-color: pink;
 
-            animation-name:fontAnimation;
+            /* animation-name:fontAnimation;
             animation-duration: 4s;
             animation-timing-function: ease-in;
             animation-delay: 0;
             animation-iteration-count: infinite;
-            animation-direction: normal;
+            animation-direction: normal; */
 
             animation: widthAnimate 4s ease-in 0s infinite normal;
+            animation: ColorAnimation 4s ease-in 0s infinite normal;
         }
-        @keyframes fontAnimation{
+        /* @keyframes fontAnimation{
             from{
                 font-size: 20px;
             }
             to{
                 font-size: 50px;
+            }
+        } */
+        @keyframes ColorAnimation{
+            0%{
+                background-color: antiquewhite;
+            }
+            50%{
+                background-color: aqua;
+            }
+            100%{
+                background-color: aquamarine;
             }
         }
         @keyframes widthAnimate{
