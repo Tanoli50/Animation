@@ -15,7 +15,9 @@
             animation-timing-function: ease-in;
             animation-delay: 0;
             animation-iteration-count: infinite;
-            animation-direction: alternate;
+            animation-direction: normal;
+
+            animation: widthAnimate 4s ease-in 0s infinite normal;
         }
         @keyframes fontAnimation{
             from{
@@ -24,6 +26,10 @@
             to{
                 font-size: 50px;
             }
+        }
+        @keyframes widthAnimate{
+            from{width: 10px;}
+            to{width: 400px;}
         }
 
     </style>
